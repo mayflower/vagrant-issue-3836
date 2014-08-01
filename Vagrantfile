@@ -9,7 +9,7 @@ nodes = Dir.glob(
 ).map { |node| File.basename(node, '.pp') }
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "mayflower/trusty64-puppet3"
+  config.vm.box = "hashicorp/precise64"
 
   nodes.each_with_index do |hostname, index|
     config.vm.define hostname do |node|

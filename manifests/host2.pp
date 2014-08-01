@@ -1,5 +1,5 @@
 class foo {
-  notify { 'host1 successful': }
+  notify { 'host2 successful': }
 }
 
 include foo
